@@ -1,11 +1,11 @@
 jQuery (document).ready(function() {
 
     $('.navi>li') .mouseover(function() {
-      $('.submenu').stop().slideDown(500);
-      $("#menu_bg").stop().slideDown(500);
+      $('.submenu').stop().slideDown(300);
+      $("#menu_bg").stop().slideDown(300);
     }) .mouseout(function () {
-      $('.submenu').stop().slideUp(500);
-      $("#menu_bg").stop().slideUp(500);
+      $('.submenu').stop().slideUp(300);
+      $("#menu_bg").stop().slideUp(300);
     });
 
 });
