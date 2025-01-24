@@ -9,12 +9,12 @@
         <script>
 function checkAndRedirect() {
             var inputText = document.getElementById("userInput").value;
-            var targetWord = "12";  // 이 단어가 포함되면 페이지 이동
+            var targetWord = "8";  // 이 단어가 포함되면 페이지 이동
 
             if (inputText.includes(targetWord)) {
-                window.location.href = "situ3-3.html"; // 해당 단어가 포함되면 다음페이지로 이동
+                window.location.href = "situ1-4.html"; // 해당 단어가 포함되면 다음페이지로 이동
             } else {
-                alert("사슴은 네 발자국, 새는 두 발자국");
+                alert("갯수는 셀 수 있지?");
             }
         }
         </script>
@@ -22,12 +22,14 @@ function checkAndRedirect() {
 
     <body>
         <div class="contents">
-            <h1>나무 옆에 두 개의 흔적이 보인다.
-                하나는 네 발자국, 하나는 두 발자국.
-                
-                사슴은 네 발자국을 새는 두 발자국을 남길 수 있다.
-                총 6개의 발자국이 발견되었을 때 사슴과 새는 각각 몇 마리일까?
-                (띄어쓰기 없이)</h1>
+            <h1>물음표에 들어갈 숫자는 무엇일까?
+
+                8952 = 3
+                1234 = 0
+                1560 = 2
+                6389 = 4
+
+                8888 = ?</h1>
         <div class="sq">
             <label for="userInput">답변:</label>
         <input type="text" id="userInput" placeholder="숫자 입력">

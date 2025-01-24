@@ -2,16 +2,43 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./situ.css" type="text/css" rel="stylesheet">
-        <title>CODE</title>
+        <title>Who?</title>
+
+<script>
+    function checkAndRedirect() {
+        var inputText = document.getElementById("userInput").value;
+        var targetWords = ["A, B", "AB", "A,B", "A B"];  // 확인할 단어들을 배열로 저장
+
+        // 입력한 텍스트가 배열의 단어 중 하나라도 포함하는지 확인
+        for (var i = 0; i < targetWords.length; i++) {
+            if (inputText.includes(targetWords[i])) {
+                window.location.href = "situ1-3.html"; // 단어가 포함되면 다음 페이지로 이동
+                return;  // 한 번 리디렉션 되면 더 이상 체크하지 않도록 종료
+            }
+        }
+
+        alert(".대한말 로대반 은신귀");
+    }
+    </script>
     </head>
 
     <body>
         <div class="contents">
+            <h1>?까일구누 은인범
 
-            <div class="code">
-                <p>CODE : [ The Ring ]</p>
-            </div>
+                .다했말 고라 " .야니아 이인범 는나 " 는F
+                .다했말 고라 " .어었있 에장현행범 는B " 는E
+                .다했말 고라 " .야니아 이실사 은말 의A " 는D
+                .다했말 고라 " .어있 고하 을말짓거 는E " 는C
+                .다했말 고라 " .어있 고알 을인범 가A " 는B
+                .다했말 고라 " .야이명 한 은인범 는아 가내 " 는A</h1>
+        <div class="sq">
+            <label for="userInput">답변:</label>
+        <input type="text" id="userInput" placeholder="대문자 입력">
+        <button onclick="checkAndRedirect()">확인</button>
+        </div>
 
         </div>
 
